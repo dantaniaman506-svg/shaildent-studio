@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Star, ArrowRight, Phone, MessageCircle, Quote, ShieldCheck, Sparkles, HeartHandshake } from "lucide-react";
+import { Star, ArrowRight, Phone, MessageCircle, Quote, ShieldCheck, Sparkles, HeartHandshake, PlayCircle } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
+import { ScrollVideo } from "@/components/ScrollVideo";
 import { services, reviews, gallery, trustStats } from "@/lib/data";
 import { site, telLink, waLink } from "@/lib/site";
 
@@ -26,7 +27,10 @@ function Home() {
         <div className="mx-auto max-w-7xl px-5 pt-8 md:pt-16 pb-16 md:pb-24 grid gap-10 md:grid-cols-2 items-center">
           <div>
             <Reveal>
-              <SectionLabel>Rajkot's Aesthetic Dental Studio</SectionLabel>
+              <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-accent" style={{ fontFamily: "var(--font-poppins)" }}>
+                <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                Rajkot's Aesthetic Dental Studio
+              </div>
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="mt-5 font-display text-[44px] leading-[1.05] md:text-[68px] md:leading-[1.02] font-semibold tracking-tight text-foreground">
@@ -35,12 +39,12 @@ function Home() {
               </h1>
             </Reveal>
             <Reveal delay={0.16}>
-              <p className="mt-5 max-w-xl text-[15px] md:text-base leading-relaxed text-muted-foreground">
-                Advanced, personalised dental care by <span className="text-foreground font-medium">Dr. Shailaja</span> — delivered in a calm, luxuriously designed studio in Mota Mava, Rajkot.
+              <p className="mt-5 max-w-xl text-[15px] md:text-base leading-relaxed text-muted-foreground" style={{ fontFamily: "var(--font-poppins)" }}>
+                Advanced, personalised dental care by <span className="text-foreground font-semibold">Dr. Shailaja</span> — delivered in a calm, luxuriously designed studio in Mota Mava, Rajkot.
               </p>
             </Reveal>
             <Reveal delay={0.24}>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-wrap gap-3" style={{ fontFamily: "var(--font-poppins)" }}>
                 <Link to="/contact" hash="appointment-form" className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground shadow-gold hover:opacity-90 transition">
                   Book Appointment <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -50,7 +54,7 @@ function Home() {
               </div>
             </Reveal>
             <Reveal delay={0.32}>
-              <div className="mt-8 flex items-center gap-4 text-sm text-muted-foreground">
+              <div className="mt-8 flex items-center gap-4 text-sm text-muted-foreground" style={{ fontFamily: "var(--font-poppins)" }}>
                 <div className="flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-accent text-accent" />
@@ -69,15 +73,15 @@ function Home() {
             >
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sage-soft to-accent-soft blur-2xl opacity-60 -z-10" />
               <img
-                src="/images/dental-chair.jpg"
-                alt="ShailDent treatment room"
+                src="/images/hero-door.jpg"
+                alt="ShailDent entrance — Where every smile matters"
                 className="aspect-[4/5] w-full rounded-[1.75rem] object-cover shadow-soft ring-1 ring-border"
               />
               <div className="absolute -bottom-5 -left-5 hidden md:flex items-center gap-3 rounded-2xl border border-border bg-card/90 backdrop-blur px-4 py-3 shadow-card">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-accent-foreground">
                   <ShieldCheck className="h-5 w-5" />
                 </div>
-                <div className="text-xs">
+                <div className="text-xs" style={{ fontFamily: "var(--font-poppins)" }}>
                   <div className="font-semibold text-foreground">Painless & Sterilised</div>
                   <div className="text-muted-foreground">Hospital-grade protocols</div>
                 </div>
@@ -107,7 +111,7 @@ function Home() {
           <div className="relative">
             <div className="absolute -inset-3 rounded-[2rem] bg-sage-soft -z-10" />
             <img
-              src="/images/dr-shailaja-working.jpg"
+              src="/images/treatment-1.jpg"
               alt="Dr. Shailaja treating a patient"
               className="aspect-[4/5] w-full rounded-[1.75rem] object-cover ring-1 ring-border"
             />
