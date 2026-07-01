@@ -116,7 +116,7 @@ function Home() {
             >
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sage-soft to-accent-soft blur-2xl opacity-60 -z-10" />
               <img
-                src="/images/treatment-1.jpg"
+                src="/images/clinic-10.jpg"
                 alt="Dr. Shailaja treating a patient at ShailDent"
                 className="aspect-[4/5] w-full rounded-[1.75rem] object-cover shadow-soft ring-1 ring-border"
               />
