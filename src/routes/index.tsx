@@ -141,6 +141,68 @@ function Home() {
         </div>
       </section>
 
+      {/* STUDIO TOUR — photos + autoplay videos */}
+      <section className="mx-auto max-w-7xl px-5 pb-16 md:pb-24">
+        <div className="flex items-end justify-between gap-4 flex-wrap">
+          <Reveal>
+            <SectionLabel>Step Inside</SectionLabel>
+            <h2 className="mt-4 font-display text-4xl md:text-5xl font-semibold text-foreground max-w-2xl">
+              A cinematic <span className="font-script text-accent">tour</span> of the studio.
+            </h2>
+            <p className="mt-3 max-w-xl text-sm text-muted-foreground" style={{ fontFamily: "var(--font-poppins)" }}>
+              Scroll through — every video and photo auto-plays as it enters view. Tap to unmute or pause.
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1.5 text-[11px] font-semibold text-accent" style={{ fontFamily: "var(--font-poppins)" }}>
+              <PlayCircle className="h-3.5 w-3.5" /> Auto-plays on scroll
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-6 md:grid-rows-2 md:auto-rows-fr">
+          <Reveal className="md:col-span-4 md:row-span-2">
+            <ScrollVideo
+              src="/videos/tour-1.mp4"
+              poster="/images/reception.jpg"
+              label="Studio Walkthrough"
+              className="aspect-video md:h-full md:aspect-auto"
+            />
+          </Reveal>
+          <Reveal delay={0.05} className="md:col-span-2">
+            <div className="h-full overflow-hidden rounded-3xl ring-1 ring-border shadow-card aspect-[4/3] md:aspect-auto">
+              <img src="/images/entrance-smile.jpg" alt="Smile entrance arch" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1} className="md:col-span-2">
+            <ScrollVideo
+              src="/videos/tour-2.mp4"
+              poster="/images/consult-room.jpg"
+              label="Inside the Rooms"
+              className="aspect-[4/3] md:h-full md:aspect-auto"
+            />
+          </Reveal>
+        </div>
+
+        <div className="mt-4 grid grid-cols-3 gap-3 md:gap-4">
+          <Reveal delay={0.05}>
+            <div className="overflow-hidden rounded-2xl aspect-[4/3] ring-1 ring-border">
+              <img src="/images/reception.jpg" alt="Reception" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="overflow-hidden rounded-2xl aspect-[4/3] ring-1 ring-border">
+              <img src="/images/dental-chair.jpg" alt="Dental chair" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <div className="overflow-hidden rounded-2xl aspect-[4/3] ring-1 ring-border">
+              <img src="/images/inauguration.jpg" alt="Inauguration" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* SERVICES PREVIEW */}
       <section className="mx-auto max-w-7xl px-5">
         <div className="flex items-end justify-between gap-4 flex-wrap">
