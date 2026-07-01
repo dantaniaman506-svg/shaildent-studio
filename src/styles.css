@@ -30,7 +30,8 @@
 
   --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-script: "Cormorant Garamond", ui-serif, Georgia, serif;
-  --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Poppins", "Karla", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
   --shadow-soft: 0 8px 30px -8px color-mix(in srgb, var(--primary) 18%, transparent);
   --shadow-card: 0 2px 14px -4px color-mix(in srgb, var(--primary) 10%, transparent);
