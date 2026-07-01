@@ -63,7 +63,7 @@ export const services: Service[] = [
       "Laser-assisted therapy for advanced cases",
       "Prevents bone loss and future tooth loss",
     ],
-    image: "/images/clinic-4.jpg",
+    image: "/images/consult-room.jpg",
     icon: Leaf,
   },
   {
@@ -78,7 +78,7 @@ export const services: Service[] = [
       "Wisdom tooth & impacted tooth expertise",
       "Same-day implant planning available",
     ],
-    image: "/images/clinic-6.jpg",
+    image: "/images/reception.jpg",
     icon: Wrench,
   },
   {
@@ -93,7 +93,7 @@ export const services: Service[] = [
       "Low-friction, comfortable brackets",
       "Retainers and follow-up included",
     ],
-    image: "/images/clinic-2.jpg",
+    image: "/images/clinic-1.jpg",
     icon: Zap,
   },
   {
@@ -108,7 +108,7 @@ export const services: Service[] = [
       "Lifelike translucency and shade matching",
       "Minimal tooth reduction, long-lasting bond",
     ],
-    image: "/images/clinic-3.jpg",
+    image: "/images/clinic-2.jpg",
     icon: Sparkles,
   },
   {
@@ -123,7 +123,7 @@ export const services: Service[] = [
       "Precise fit with no painful pressure points",
       "Comfortable chewing and clear speech",
     ],
-    image: "/images/clinic-5.jpg",
+    image: "/images/clinic-3.jpg",
     icon: Crown,
   },
   {
@@ -138,7 +138,7 @@ export const services: Service[] = [
       "Tooth-coloured fillings",
       "Early orthodontic screening",
     ],
-    image: "/images/clinic-8.jpg",
+    image: "/images/dental-chair.jpg",
     icon: Baby,
   },
 ];
@@ -204,22 +204,12 @@ export interface GalleryItem {
 export const gallery: GalleryItem[] = [
   { src: "/images/reception.jpg", alt: "ShailDent reception desk with sculpted wall art", category: "Reception" },
   { src: "/images/consult-room.jpg", alt: "Consultation room with sage green desk", category: "Reception" },
-  { src: "/images/dental-chair.jpg", alt: "Modern dental chair in a glass-walled operatory", category: "Treatment Rooms" },
+  { src: "/images/dental-chair.jpg", alt: "Modern dental chair in operatory", category: "Treatment Rooms" },
   { src: "/images/treatment-1.jpg", alt: "Dr. Shailaja treating a patient", category: "Treatment Rooms" },
+  { src: "/images/inauguration.jpg", alt: "Lamp lighting at the clinic inauguration", category: "Moments" },
   { src: "/images/clinic-1.jpg", alt: "Interior of ShailDent studio", category: "Treatment Rooms" },
   { src: "/images/clinic-2.jpg", alt: "Treatment area at ShailDent", category: "Treatment Rooms" },
-  { src: "/images/clinic-3.jpg", alt: "Aesthetic treatment room", category: "Treatment Rooms" },
-  { src: "/images/clinic-4.jpg", alt: "Sterilised operatory", category: "Treatment Rooms" },
-  { src: "/images/clinic-5.jpg", alt: "Studio lounge area", category: "Reception" },
-  { src: "/images/clinic-6.jpg", alt: "Waiting area detail", category: "Reception" },
-  { src: "/images/clinic-7.jpg", alt: "Interior corridor", category: "Reception" },
-  { src: "/images/clinic-8.jpg", alt: "Clinic detail shot", category: "Treatment Rooms" },
-  { src: "/images/clinic-9.jpg", alt: "Studio interior view", category: "Treatment Rooms" },
-  { src: "/images/clinic-10.jpg", alt: "Aesthetic wall art", category: "Reception" },
-  { src: "/images/inauguration.jpg", alt: "Lamp lighting at the clinic inauguration", category: "Moments" },
-  { src: "/images/entrance-smile.jpg", alt: "Floral 'Smile' entrance arch", category: "Exterior" },
-  { src: "/images/hero-door.jpg", alt: "'Where every smile matters' entrance door", category: "Exterior" },
-  { src: "/images/exterior.jpg", alt: "ShailDent building signage in Rajkot", category: "Exterior" },
+  { src: "/images/clinic-3.jpg", alt: "Clinic detail shot", category: "Treatment Rooms" },
 ];
 
 export const trustStats = [

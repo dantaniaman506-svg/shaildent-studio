@@ -6,12 +6,6 @@ import { SectionLabel } from "@/components/SectionLabel";
 import { gallery, type GalleryItem } from "@/lib/data";
 
 export const Route = createFileRoute("/gallery")({
-  head: () => ({
-    meta: [
-      { title: "Gallery · ShailDent The Dental Studio" },
-      { name: "description", content: "Step inside ShailDent — our reception, treatment rooms and aesthetic studio designed to make every visit calm." },
-    ],
-  }),
   component: GalleryPage,
 });
 

@@ -4,19 +4,21 @@ A multi-page marketing website for ShailDent, Dr. Shailaja's aesthetic dental cl
 
 ## Stack
 
-- **Framework**: React 19 + TanStack Start (SSR-capable, file-based routing)
+- **Framework**: React 19 + TanStack Router (pure client-side SPA, no SSR)
 - **Styling**: Tailwind CSS v4 + shadcn/ui components
 - **Animations**: Framer Motion
-- **Build tool**: Vite 8 via `@lovable.dev/vite-tanstack-config`
+- **Build tool**: Vite 8 with `@tailwindcss/vite` + `@tanstack/router-plugin`
 - **Package manager**: Bun
+- **Deployment**: Vercel-ready (`vercel.json` included with SPA rewrites)
 
 ## Running the app
 
 ```bash
-bun run dev
+bun run dev   # dev server on port 5000
+bun run build # production build → dist/
 ```
 
-Runs on port 5000. The workflow "Start application" handles this automatically.
+The workflow "Start application" handles dev automatically.
 
 ## Project structure
 

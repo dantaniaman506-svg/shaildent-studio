@@ -7,12 +7,6 @@ import { site, telLink, waLink } from "@/lib/site";
 import { services } from "@/lib/data";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact & Book · ShailDent The Dental Studio" },
-      { name: "description", content: "Book your appointment at ShailDent The Dental Studio, Rajkot. WhatsApp, call or use our online form — we reply within minutes." },
-    ],
-  }),
   component: ContactPage,
 });
 

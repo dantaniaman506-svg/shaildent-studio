@@ -6,12 +6,6 @@ import { reviews } from "@/lib/data";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/reviews")({
-  head: () => ({
-    meta: [
-      { title: "Patient Reviews · ShailDent The Dental Studio" },
-      { name: "description", content: "Read what patients across Rajkot say about Dr. Shailaja and the ShailDent experience — consistently rated 5 stars on Google." },
-    ],
-  }),
   component: ReviewsPage,
 });
 
