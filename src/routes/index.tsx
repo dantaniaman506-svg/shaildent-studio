@@ -227,7 +227,7 @@ function Home() {
                 <Link to="/services" hash={s.slug} className="group block overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft">
                   <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                     <img
-                      src={gallery[i % gallery.length].src}
+                      src={s.image}
                       alt={s.title}
                       className="h-full w-full object-cover scale-105 transition-transform duration-500 group-hover:scale-110"
                     />
