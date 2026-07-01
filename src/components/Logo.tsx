@@ -3,11 +3,11 @@ import { Link } from "@tanstack/react-router";
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link to="/" className="flex items-center gap-2.5 group">
-      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-border bg-primary">
+      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full ring-1 ring-border">
         <img
           src="/images/logo.jpg"
           alt="ShailDent"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-left"
         />
       </div>
       <div className="flex flex-col leading-none">
