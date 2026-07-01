@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
-import { services, gallery } from "@/lib/data";
+import { services } from "@/lib/data";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -50,15 +50,14 @@ function ServicesPage() {
 
         {/* Content */}
         <div className="md:col-span-9 space-y-14">
-          {services.map((s, i) => {
+          {services.map((s) => {
             const Icon = s.icon;
-            const img = gallery[(i + 2) % gallery.length];
             return (
               <Reveal key={s.slug}>
                 <article id={s.slug} className="scroll-mt-28 overflow-hidden rounded-3xl border border-border bg-card shadow-card">
                   <div className="grid md:grid-cols-2">
                     <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden bg-muted">
-                      <img src={img.src} alt={s.title} className="h-full w-full object-cover" />
+                      <img src={s.image} alt={s.title} className="h-full w-full object-cover" />
                     </div>
                     <div className="p-6 md:p-8">
                       <div className="flex items-center gap-3">

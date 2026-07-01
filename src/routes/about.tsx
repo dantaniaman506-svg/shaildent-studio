@@ -21,8 +21,8 @@ const values = [
 ];
 
 const whyUs = [
-  { title: "Cosmetic-led dentistry", body: "Every restoration is shaped, shaded and polished to look indistinguishable from natural enamel.", img: "/images/treatment-room.jpg" },
-  { title: "A space that calms anxiety", body: "Soft lighting, sage seating and a curated playlist — designed to undo years of dental fear in minutes.", img: "/images/lounge.jpg" },
+  { title: "Cosmetic-led dentistry", body: "Every restoration is shaped, shaded and polished to look indistinguishable from natural enamel.", img: "/images/clinic-3.jpg" },
+  { title: "A space that calms anxiety", body: "Soft lighting, sage seating and a curated playlist — designed to undo years of dental fear in minutes.", img: "/images/consult-room.jpg" },
   { title: "Modern, guided workflows", body: "Digital scans, computer-guided implants and rotary endodontics — faster, more precise, less invasive.", img: "/images/dental-chair.jpg" },
 ];
 
@@ -124,7 +124,7 @@ function AboutPage() {
         <div className="mt-10 grid gap-5 md:grid-cols-2 max-w-4xl">
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-card">
-              <img src="/images/dr-shailaja-working.jpg" alt="Dr. Shailaja" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/treatment-1.jpg" alt="Dr. Shailaja" className="aspect-[4/3] w-full object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-2xl font-semibold">Dr. Shailaja</h3>
                 <p className="text-sm text-accent font-semibold">Founder · Cosmetic & Aesthetic Dentist</p>
@@ -134,7 +134,7 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-card">
-              <img src="/images/inauguration-lamp.jpg" alt="ShailDent care team" className="aspect-[4/3] w-full object-cover" />
+              <img src="/images/inauguration.jpg" alt="ShailDent care team" className="aspect-[4/3] w-full object-cover" />
               <div className="p-6">
                 <h3 className="font-display text-2xl font-semibold">The Care Team</h3>
                 <p className="text-sm text-accent font-semibold">Hygienists · Assistants · Front Desk</p>
